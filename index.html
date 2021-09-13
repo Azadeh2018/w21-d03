@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azadeh Amirhosseini-My final html project</title>
+    <style>
+        .flexbox01 {
+            display: flex;
+        }        
+        .flexbox02 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }        
+        .flexbox03 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }        
+        .flexbox04 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flexbox05 {
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .flx1-itm-01 {
+            background-color: rgb(238, 170, 170);
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: left;
+            align-items: center;
+            font-size: xx-large;
+        }
+        .flx1-itm-02 {
+            flex: 3;
+            margin: 5px;
+            padding: 10px;
+            text-align: right;
+            align-items: right;
+            background-color: rgb(238, 170, 170);
+        }
+        .flexbox03 .flx-itm-01 {
+            padding: 5px 50px;
+        }
+        .flx1-itm-01 h6 {
+            padding: 0%;
+            margin: 0%;
+        }
+        ul{
+            list-style-type: none;
+            width: 80%;
+            height: auto;
+            margin: 12px auto;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            text-decoration: none;
+            color:white;
+            background-color: rgb(238, 170, 170);
+            padding: 16px;
+            font-size: x-large;
+        }
+        ul li a:hover{
+            background-color: white;
+            color: rgb(245, 7, 165);
+        }
+        #search-btn {
+            background-color: rgb(245, 7, 165);
+            border-color: rgb(245, 7, 165);
+            font-size: large;
+        }
+
+        /* Flex 02 */
+        .flx2-itm-01 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            background-color: white;
+        }
+        .flx2-itm-02 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(238, 170, 170);
+        }
+        #info-btn {
+            background-color: rgb(62, 168, 145);
+            border-color: rgb(62, 168, 145);
+            font-size: large;
+            font-weight: bold;
+            margin: 20px;
+            padding: 15px;
+        }
+        /* Flex 03 
+        #article-01 {
+            background-image: url(wmc.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-attachment: fixed;
+            background-size: 50%; 
+        }*/
+        .flx3-itm-01 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            height: 400px;
+            text-align: center;
+            align-items: center;
+        }
+        .flx3-itm-02 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+        }
+        .flx3-itm-03 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+        }
+        div.flx3-itm-01 {
+            border: 10px solid rgb(238, 170, 170);
+            width: auto;
+            padding: 20px;
+            overflow: hidden;
+            margin: 10px;
+        }
+        div.flx3-itm-02 {
+            border: 10px solid rgb(238, 170, 170);
+            width: auto;
+            padding: 20px;
+            overflow: hidden;
+            margin: 10px;
+        }
+        div.flx3-itm-03 {
+            border: 10px solid rgb(238, 170, 170);
+            width: auto;
+            padding: 20px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .table-01{
+            border-collapse: collapse;
+            text-align: center;
+            width: auto;
+            height: auto;
+            margin: 40px auto;
+            font-size: 40px;
+        }
+        table, td, th{
+            border: 4px solid rgb(228, 74, 74);
+        }
+        th{
+            background-color: rgb(228, 152, 152);
+        }
+        td:hover{
+            background-color: rgb(228, 74, 74);
+        }
+/* Flex 4 */
+        .flx4-itm-01 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+        }
+        .flx4-itm-02 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            align-items:flex-start;
+        }
+        .flx4-itm-02 h3 {
+            align-items:flex-start;
+        }
+        #img-01{
+            width: 500px;;
+            height: auto;
+            margin: 20px;
+        }
+        .flx5-itm-01 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: left;
+            align-items: center;
+            font-size: 20px;
+            
+        }
+        .flx5-itm-02 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: left;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            background-image: url(shipping.png);
+            background-repeat: no-repeat;
+        }
+        .flx5-itm-03 {
+            flex: 1;
+            margin: 5px;
+            padding: 10px;
+            text-align: left;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white;
+            font-weight: bold;
+        }
+
+        @media (min-width:1091px){}   /* correct value is 581px but for my website i chooses 1091px */
+        @media (max-width:1090px){
+            .flexbox01{
+                flex-direction: column;
+                font-size: 24px;
+            }
+            .flx1-itm-01, .flx1-itm-02 ul li {
+                flex-direction: column;
+                width: 100%;
+                height: 80px;
+                text-align: left;
+
+            }
+            img{
+                width:100%;
+                height: auto;
+                margin-left:-9px;
+                border: 10px solid green;
+            }
+            button{
+                background-color: green;
+                border: 5px solid green;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <div class="flexbox01">
+        <div class="flx1-itm-01" style="font-weight: bold;">My book shop
+            <h6 style="font-style: italic;">for e-books and audio books</h6>
+        </div>
+        <div class="flx1-itm-02">
+            <ul>
+                <li>
+                    <a href="#">Sign in</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com">Google</a>
+                </li>
+                <li>
+                    <a href="#">DVD/Blue-Ray</a>
+                </li>
+                <select>
+                    <option>All</option>
+                    <option>E-book</option>
+                    <option>Audio-book</option>
+                </select>
+                <input type="text" placeholder="Title of your desired book .. ">
+                <button id="search-btn">Search</button>
+                <input type="checkbox">
+                <label>Search only in this shop</label>
+            </ul>
+        </div>
+    </div>
+    <div class="flexbox02">
+        <div class="flx2-itm-01">
+            <iframe width="700" height="275" src="https://www.youtube.com/embed/ldiaiDt1w9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="flx2-itm-02">
+            <h1>Book lovers:</h1>
+            <h2>which of them you choose?</h2><br>
+            <ul>
+                <li>
+                    <a href="#">to read</a>
+                </li>
+                <li> or
+                    <a href="#">to listen</a>
+                </li>
+        </div>
+    </div>
+    <div class="flexbox03">
+            <table class="table-01">
+                <tr>
+                    <th>Women</th>
+                    <th>Men</th>
+                    <th>Children</th>
+                </tr>
+                <tr>
+                    <td>suggested e-book 1</td>
+                    <td>suggested e-book 1</td>
+                    <td>suggested e-book 1</td>
+                </tr>
+                <tr>
+                    <td> <a href="#">suggested e-book 2</a></td>
+                    <td> <a href="#">suggested e-book 2</a></td>
+                    <td> <a href="#">suggested e-book 2</a></td>
+                </tr>
+            </table>
+        </article>
+    </div>
+    <div class="flexbox04">
+        <div class="flx4-itm-01">
+            <img id="img-01" src="01.jpg" alt="This shows a bunch of books and a Tablet beside">
+        </div>
+        <div class="flx4-itm-02">
+            <h3 style="padding: 50px;">Words of the day</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quam ea eaque laborum, natus numquam, quisquam explicabo porro corrupti labore illo rerum reprehenderit, cupiditate voluptatum veniam? Sapiente animi quia nesciunt quam sit corporis voluptate nemo provident nihil necessitatibus dolor maiores praesentium quos illo nisi et, placeat est eos. Minus rerum debitis perferendis in, laborum necessitatibus minima quo, possimus eaque itaque quia, facilis provident illo eos deserunt? Debitis perspiciatis, atque nisi maxime aliquam dicta eaque sed dignissimos ratione magnam ea hic facilis nostrum error aliquid, obcaecati in ut? Exercitationem accusamus earum, dolorum officiis sed voluptatem esse assumenda rem ipsa error cum alias libero debitis qui sapiente?</div>
+    </div>  
+
+    <form>
+      <div class="flexbox05">
+            <div class="flx5-itm-01">
+                <h2>Payment</h2>
+                <h3>Way of payment:</h3> 
+                <select>
+                    <option>American Express Card</option>
+                    <option>PayPal</option>
+                </select>
+                <br>
+                <input type="checkbox">
+                <label>Receipt by email to the following address:</label>
+                <input type="email" placeholder="...@...">
+            </div>
+                <div class="flx5-itm-02">
+                <h2>Shipping</h2>
+                <div>
+                    <h3>Delivery address</h3>
+                    <ul>
+                        <li>
+                            <div>
+                                <label>Name</label>
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label>Address</label>
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label>PLZ</label>
+                                <input type="text">
+                                <label>City</label>
+                                <input type="text">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Bill address</h3>
+                    <ul>
+                        <li>
+                            <div>
+                                <label>Name</label>
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label>Address</label>
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <label>PLZ</label>
+                                <input type="text">
+                                <label>City</label>
+                                <input type="text">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flx5-itm-03">
+                <h2>Supplement</h2>
+                <label>Your message to us:</label>
+                <br>
+                <textarea></textarea>
+                <br>
+                <input type="submit" value="I pay now" style="padding: 10px; margin: 10px;">
+            </div>
+    </div>
+</form>
+
+<footer>
+    <p>Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer>
+  
+</body>
+</html>
